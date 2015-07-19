@@ -25,10 +25,14 @@ For now rails-on-azure supports only:
     SET DEPLOYMENT_SOURCE=%DEPLOYMENT_SOURCE%
 
 
- # rails-on-azure files
+# rails-on-azure files
+
  https://files.ipepe.pl/railsonazure/rails-on-azure_ruby-and-devkit_0-0-1.7z
+
  https://files.ipepe.pl/railsonazure/rails-on-azure_deploy_0-0-1.7z
 
- # Links related to topic
+# Links related to topic
+
  http://www.hanselman.com/blog/RunningTheRubyMiddlemanStaticSiteGeneratorOnMicrosoftAzure.aspx
+
  http://www.hanselman.com/blog/AnnouncingRunningRubyOnRailsOnIIS8OrAnythingElseReallyWithTheNewHttpPlatformHandler.aspx
