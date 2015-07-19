@@ -21,7 +21,8 @@ ECHO WE MADE IT
 
 if not exist D:\home\site\deployments\tools\deploy.cmd (
     cd D:\home\site\deployments\tools
-    curl -o deploy.cmd -L https://raw.githubusercontent.com/KuduApps/CSharp6Web/master/deploy.cmd
+    copy azure-deploy\deploy.cmd .\deploy.cmd
+    rem curl -o deploy.cmd -L https://raw.githubusercontent.com/KuduApps/CSharp6Web/master/deploy.cmd
 )
 
 cd %OLD_DIRECTORY%
