@@ -17,6 +17,8 @@ IF %ERRORLEVEL% NEQ 0 (
   echo Bundler is not installed. Doing it now
   call gem install bundler --no-ri --no-rdoc
 )
+ECHO add tzinfo gem to Your gemfile
+echo gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw] >> %DEPLOYMENT_SOURCE%\Gemfile
 
 ECHO calling Bundle install --without development test
 call bundle install --without development test

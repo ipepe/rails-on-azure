@@ -4,13 +4,13 @@ IF NOT DEFINED DEPLOYMENT_SOURCE (
   SET DEPLOYMENT_SOURCE=%~dp0%.
 )
 REM set rails directory to git_root\rails
-SET DEPLOYMENT_SOURCE=%DEPLOYMENT_SOURCE%\rails
+REM SET DEPLOYMENT_SOURCE=%DEPLOYMENT_SOURCE%\rails
 
 cd D:\home\site\deployments\tools
 
 if not exist azure-deploy (
-  curl -o azure-deploy.7z -L http://files.ipepe.pl/railsonazure/rails-on-azure_deploy_0-0-1.7z
-  d:\7zip\7za x -y azure-deploy.7z > azure-deploy-unpack.log
+  curl -o azure-deploy.zip -L https://raw.githubusercontent.com/ipepe/rails-on-azure/master/azure-deploy.zip
+  d:\7zip\7za x -y azure-deploy.zip > azure-deploy-unpack.log
 )
 
 ECHO CALLING GET-RUBY
