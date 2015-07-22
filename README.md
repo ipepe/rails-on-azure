@@ -11,6 +11,8 @@ For now rails-on-azure supports only:
 ## copy files into root of Your project:
  - .deployment
  - rails-on-azure.cmd
+## add tzinfo gem to Your gemfile (windows doesnt support timezone info for ruby directly):
+ - gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 ## modify main script file
  if You do have rails subdir in Your git repo for rails project files You should change code in rails-on-azure.cmd
